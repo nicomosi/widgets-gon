@@ -1,0 +1,478 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Open Sans', sans-serif;
+}
+header{
+	width: 100%;
+	display:flex;
+	justify-content: space-between;
+	padding:40px 60px;
+}
+header .logo img{
+	height: 100px;
+	width: auto;
+}
+header .user i{
+	font-size: 50px;
+	color:rgba(0,0,0,.6);
+}
+.content{
+	width: 90%;
+	max-width: 1000px;
+	margin:0 auto;
+}
+.options{
+	margin-top: 40px;
+	display:flex;
+	justify-content: space-between;
+}
+.options .option{
+	width: 16.5%;
+	color:gray;
+}
+.options .cfg{
+	color:black;
+}
+.options .option img{
+	height: 80px;
+	width: auto;
+}
+.options .gray img{
+	-webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    opacity: .4;
+    cursor:pointer;
+}
+.form{
+	/*margin-top: 20px;*/
+	margin-bottom: 50px;
+}
+.form>div{
+	display:none;
+}
+.form .config{
+	display: block;
+}
+.form .border{
+	padding-top: 100px;
+	padding-bottom: 20px;
+	padding-left: 35px;
+	border-left: 1px solid black;
+}
+.form .tit h2{
+	font-weight: 600;
+	font-size: 28px;
+	margin-bottom: 25px;
+}
+.form .formulario label{
+	display: block;
+	width: 100%;
+	font-weight: bold;
+	font-size: 15px;
+	margin-bottom:5px;
+	margin-top: 20px;
+}
+.form .formulario input[type='text'],
+.form .formulario textarea{
+	width: 100%;
+	padding:10px;
+	border:none;
+	color:rgba(0,0,0,.6);
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	border:1px solid rgba(0,0,0,.2);
+	border-radius: 1px;
+	width: 50%;
+	outline: 0px;
+}
+.form .formulario input[type='text']:focus,
+.form .formulario textarea:focus{
+	transition: .3s all ease;
+	border:1px solid rgba(0,0,0,.4);
+}
+.form .formulario textarea{
+	max-width: 100%;
+	min-width: 50%;
+	min-height: 100px;
+	max-height: 400px;
+}
+.form .form_down{
+	padding-left: 35px;
+}
+.form .form_down p{
+	display: block;
+	width: 100%;
+	font-weight: bold;
+	font-size: 15px;
+	margin-bottom:5px;
+}
+.form .form_down .acciones .checkboxs{
+	margin-left: 7px;
+	width:40%;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+.form .form_down .donde .where{
+	width: 35%;
+	display: flex;
+	justify-content: space-between;
+}
+.form .form_down input[type='submit']{
+	font-family: 'Open Sans', sans-serif;
+	margin-top: 20px;
+	background: #FF5A00;
+	color:white;
+	font-weight: 600;
+	padding:10px 40px;
+	border:none;
+	border-radius: 5px;
+	font-size: 14px;
+	cursor:pointer;
+}
+.form .form_down input[type='submit']:hover{
+	transition: .3s all ease;
+	background: #BE5116 ;
+}
+/*Horiarios y dias*/
+.form .dias{
+	margin-top: 20px;
+}
+.form .dias p{
+	display: block;
+	width: 100%;
+	font-weight: bold;
+	font-size: 15px;
+	margin-bottom:5px;
+	margin-top: 20px;
+}
+.form .dias .days{
+	width: 50%;
+	display:flex;
+	justify-content: space-between;
+}
+.form .dias .days>div{
+	margin-top: 10px;
+	display:flex;
+	align-items: center;
+}
+.form .dias .days>div label{
+	margin:0;
+	padding:0;
+	margin-left: 5px;
+}
+.form .dias .fecha{
+	display:none;
+}
+.form .dias .fecha .date{
+	margin-top: 10px;
+	display:flex;
+	justify-content: space-between;
+	width: 70%;
+}
+.form .dias .fecha .date>div{
+	width: 30%;
+}
+.form .dias .fecha .date>div select{
+	width: 80%;
+	padding:5px;
+	border:none;
+	border:1px solid rgba(0,0,0,.3);
+}
+.form .dias .fecha a{
+	display:block;
+	color:black;
+	margin-top: 20px;
+}
+/*Config general*/
+.form .cfg_general{
+	margin-top: 40px;
+}
+.form .cfg_general p.title{
+	font-weight: bold;
+	font-size: 15px;
+}
+.form .form_down{
+	padding-left: 0;
+	margin-top: 20px;
+}
+.form .form_down .checkboxs{
+	width: 50%;
+	display:flex;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+.form .form_down .checkboxs label{
+	margin:0;
+	padding:0;
+}
+.form .form_down .checkboxs>div{
+	margin-top: 10px;
+	display:flex;
+}
+.form .form_down .checkboxs>div label{
+	margin-left: 5px;
+}
+.form .donde .where{
+	display:flex;
+	width: 70%;
+}
+.form .donde .where>div{
+	display:flex;
+	align-items: center;
+	width: 30%;
+	margin-top: 10px;
+}
+.form .donde .where>div label{
+	margin:0;
+	padding:0;
+	margin-left: 5px;
+}
+.form .formulario .mensaje p{
+	margin-top: 5px;
+	font-size: 14px;
+	margin-bottom: 80px;
+	width: 50%;
+}
+
+/*--------------------------Config--------------------------*/
+
+.form .config .form_down{
+	margin-top: 20px;
+}
+.form .config .form_down p{
+	margin-bottom: 5px;
+}
+
+/*--------------------WhatsApp/Telefono---------------------*/
+
+.form .phone a{
+	display: inline-block;
+	margin-top: 10px;
+	color:black;
+	width: 100%;
+}
+.form .phone .forma{
+	display:flex;
+	justify-content: space-between;
+	width: 50%;
+	margin-top: 5px;
+}
+.form .phone .forma>div,
+.form .phone .dias .days{
+	display:flex;
+	flex-direction: row;
+	align-items: center;
+}
+.form .phone .forma>div label,
+.form .phone .days>div label{
+	padding:0;
+	margin:0;
+	margin-left: 5px;
+}
+.form .phone .phones{
+	display:none;
+}
+.form .phone .phones .phone{
+	display:flex;
+	width: 100%;
+	justify-content: space-between;
+}
+.form .phone .phones .phone>div{
+	width: 19%;
+}
+.form .phone .phones .phone>div.tel{
+	text-align: center;
+}
+.form .phone .phones .phone>div input{
+	width: 100%;
+}
+
+/*----------------------------------------------------------*/
+/*-----------------------Media Queries----------------------*/
+/*----------------------------------------------------------*/
+
+@media screen and (max-width: 1000px){
+	header{
+		padding:20px;
+	}
+	.content{
+		max-width: none;
+		width: 95%;
+	}
+	
+	.form .formulario input[type='text'],
+	.form .formulario textarea,
+	.form .dias .days,
+	.form .form_down .checkboxs,
+	.form .formulario .mensaje p,
+	.form .phone .forma{
+		width: 70%;
+	}
+	.form .form_down .acciones .checkboxs,
+	.form .form_down .donde .where{
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: 768px){
+	.form .formulario input[type='text'],
+	.form .formulario textarea,
+	.form .dias .days,
+	.form .form_down .checkboxs,
+	.form .formulario .mensaje p,
+	.form .phone .forma{
+		width: 80%;
+	}
+	.form .form_down .acciones .checkboxs,
+	.form .form_down .donde .where{
+		width: 60%;
+	}
+
+	.form .phone .phones .phone{
+		flex-wrap: wrap;
+		width: 100%;
+		align-items: center;
+	}
+	.form .phone .phones .phone > div{
+		width: 24%;
+	}
+	.form .phone .phones .phone > div.tel{
+		width: 100%;
+		border-bottom: 1px solid rgba(0,0,0,.4);
+		padding-bottom: 9px;
+	}
+}
+
+@media screen and (max-width: 600px){
+	header .logo img{
+		height: 80px;
+	}
+	.options{
+		width: 100%;
+	}
+	.options .option{
+		display: flex;
+		justify-content: center;
+	}
+	.options .option img{
+		height: 65px;
+	}
+	.form .formulario input[type='text'],
+	.form .formulario textarea,
+	.form .dias .days,
+	.form .dias .fecha .date,
+	.form .form_down .checkboxs,
+	.form .formulario .mensaje p,
+	.form .phone .forma{
+		width: 90%;
+	}
+	.form .form_down .acciones .checkboxs,
+	.form .form_down .donde .where{
+		width: 70%;
+	}
+}
+
+@media screen and (max-width: 500px){
+	header .logo img{
+		height: 60px;
+		align-items: center;
+	}
+	header .user{
+		display:flex;
+		align-items: center;
+	}
+	header .user i{
+		font-size: 40px;
+	}
+	.options{
+		margin-top: 0;
+	}
+	.options .option img{
+		height: 55px;
+	}
+	.form{
+		margin-top: 15px;
+		padding-top: 15px;
+		border-top: 1px solid rgba(0,0,0,.3);
+	}
+	.form .border{
+		border:none;
+		padding:0;
+	}
+	.form a{
+		text-align: center;
+	}
+	.form .phone .phones .phone > div{
+		width: 48%;
+	}
+	.form .formulario input[type='text'],
+	.form .formulario textarea,
+	.form .dias .days,
+	.form .dias .fecha .date,
+	.form .form_down .checkboxs,
+	.form .formulario .mensaje p,
+	.form .phone .forma{
+		width: 100%;
+	}
+	.form .dias .days label,
+	.form .phone .forma label{
+		font-size: 14px;
+	}
+	.form .form_down .acciones .checkboxs,
+	.form .form_down .donde .where{
+		width: 85%;
+	}
+}
+
+@media screen and (max-width: 450px){
+	.options{
+		flex-wrap: wrap;
+	}
+	.options .option{
+		width: 30%;
+		margin-top: 20px;
+	}
+	.options .option img{
+		height: 60px;
+	}
+	.form .phone .dias .days,
+	.form .phone .forma{
+		flex-direction: column;
+		align-items: center;
+	}
+	.form .phone .dias .days>div,
+	.form .phone .forma>div{		
+		margin-top: 5px;
+	}
+}
+@media screen and (max-width: 400px){
+	.form .dias .fecha .date{
+		flex-wrap: wrap;
+		flex-direction: column;
+		align-items: center;
+	}
+	.form .dias .fecha .date>div{
+		width: 100%;
+		display:flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.form .dias .fecha .date>div label{
+		text-align: center;
+	}
+	
+	.form .form_down .acciones .checkboxs,
+	.form .form_down .donde .where{
+		width: 98%;
+	}
+}
+@media screen and (max-width: 360px){
+	.options .option img{
+		height: 50px;
+	}
+}

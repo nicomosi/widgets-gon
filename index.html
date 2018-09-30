@@ -1,0 +1,1651 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Test</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+	<script src="https://use.fontawesome.com/2d83eb3d68.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+	<!-- <i class="fa fa-cog" aria-hidden="true"></i>
+	 -->
+	<header>
+		<div class="logo">
+			<img src="img/logo.jpg" alt="">
+		</div>
+		<div class="user">
+			<i class="fa fa-user-circle-o" aria-hidden="true"></i>
+		</div>
+	</header>
+	<div class="content">
+		<div class="options">
+			<div class="option cfg" id='config'>
+				<img src="img/cog.png">
+			</div>
+			<div class="option gray" id='whatsapp'>
+				<img src="img/whatsapp.png">
+			</div>
+			<div class="option gray" id='telefono'>
+				<img src="img/phone.png">
+			</div>
+			<div class="option gray" id='mail'>
+				<img src="img/gmail.png">
+			</div>
+			<div class="option gray" id='facebook'>
+				<img src="img/messenger.png">
+			</div>
+			<div class="option gray" id='gmaps'>
+				<img src="img/google.png">
+			</div>
+		</div>
+		<div class="form">
+			<div class="config">
+				<form>
+					<div class="border">
+						<div class="tit">
+							<h2>Configuracion General</h2>
+						</div>
+						<div class="formulario">
+							<div class="color">
+								<label for="color">1. Elige el color de tu widget</label>
+								<input type="text" id='color' placeholder="#FF6550">
+							</div>
+							<div class="posicion">
+								<label for="posicion">2. Elige la posición de tu widget</label>
+								<div class="position">
+									<label for="vertical">Vertical (px)</label>
+									<input type="text" placeholder="30" id='vertical'>
+								</div>
+								<div class="position">
+									<label for="horizontal">Horizontal</label>
+									<input type="text" id='horizontal' placeholder="30">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="form_down">
+						<input type="submit" name="cfg" value='Guardar'>
+					</div>
+				</form>
+			</div>
+			<div class="phone whatsapp">
+				<form action="">
+					<div class="border">
+						<div class="tit">
+							<h2>Whatsapp</h2>
+						</div>
+						<div class="formulario">
+							<div class="numero">
+								<label for="numero">1. Agrega tus números de Whatsapp</label>
+								<input type="text" id='numero'>
+								<!-- -->
+							</div>
+							<div class="dias">
+								<p>2. Define los días y horarios en que se activará  el Widget de Whatsapp</p>
+								<div class="days">
+									<div>
+										<input type="radio" id='todos' name='days_wsp' class='todos' checked>
+										<label for="todos">Todos los días y horarios</label>
+									</div>
+									<div>
+										<input type="radio" id='definir' name='days_wsp' class='definir'>
+										<label for="definir">Definir días y horarios</label>
+									</div> 
+								</div>
+								<div class="fecha">
+									<div class="dates">
+										<div class="date">
+											<div>
+												<label for="dia">Día</label> 
+												<select name="" id="dia">
+													<option value="">Lunes</option>
+													<option value="">Martes</option>
+													<option value="">Miércoles</option>
+													<option value="">Jueves</option>
+													<option value="">Viernes</option>
+													<option value="">Sábados</option>
+													<option value="">Domingos</option>
+												</select>
+											</div>
+											<div>
+												<label for="desde">Horario Desde:</label>
+												<select name="" id="desde">
+													<option value="">0:00</option>
+													<option value="">0:15</option>
+													<option value="">0:30</option>
+													<option value="">0:45</option>
+													<option value="">1:00</option>
+													<option value="">1:15</option>
+													<option value="">1:30</option>
+													<option value="">1:45</option>
+													<option value="">2:00</option>
+													<option value="">3:00</option>
+													<option value="">3:15</option>
+													<option value="">3:30</option>
+													<option value="">3:45</option>
+													<option value="">4:00</option>
+													<option value="">4:00</option>
+													<option value="">4:15</option>
+													<option value="">4:30</option>
+													<option value="">4:45</option>
+													<option value="">5:00</option>
+													<option value="">5:00</option>
+													<option value="">5:15</option>
+													<option value="">5:30</option>
+													<option value="">5:45</option>
+													<option value="">6:00</option>
+													<option value="">6:00</option>
+													<option value="">6:15</option>
+													<option value="">6:30</option>
+													<option value="">6:45</option>
+													<option value="">7:00</option>
+													<option value="">7:00</option>
+													<option value="">7:15</option>
+													<option value="">7:30</option>
+													<option value="">7:45</option>
+													<option value="">8:00</option>
+													<option value="">8:00</option>
+													<option value="">8:15</option>
+													<option value="">8:30</option>
+													<option value="">8:45</option>
+													<option value="">9:00</option>
+													<option value="">9:00</option>
+													<option value="">9:15</option>
+													<option value="">9:30</option>
+													<option value="">9:45</option>
+													<option value="">10:00</option>
+													<option value="">10:00</option>
+													<option value="">10:15</option>
+													<option value="">10:30</option>
+													<option value="">10:45</option>
+													<option value="">11:00</option>
+													<option value="">11:00</option>
+													<option value="">11:15</option>
+													<option value="">11:30</option>
+													<option value="">11:45</option>
+													<option value="">12:00</option>
+													<option value="">12:00</option>
+													<option value="">12:15</option>
+													<option value="">12:30</option>
+													<option value="">12:45</option>
+													<option value="">13:00</option>
+													<option value="">13:15</option>
+													<option value="">13:30</option>
+													<option value="">13:45</option>
+													<option value="">14:00</option>
+													<option value="">14:15</option>
+													<option value="">14:30</option>
+													<option value="">14:45</option>
+													<option value="">15:00</option>
+													<option value="">15:15</option>
+													<option value="">15:30</option>
+													<option value="">15:45</option>
+													<option value="">16:00</option>
+													<option value="">16:15</option>
+													<option value="">16:30</option>
+													<option value="">16:45</option>
+													<option value="">17:00</option>
+													<option value="">17:15</option>
+													<option value="">17:30</option>
+													<option value="">17:45</option>
+													<option value="">18:00</option>
+													<option value="">18:15</option>
+													<option value="">18:30</option>
+													<option value="">18:45</option>
+													<option value="">19:00</option>
+													<option value="">19:15</option>
+													<option value="">19:30</option>
+													<option value="">19:45</option>
+													<option value="">20:00</option>
+													<option value="">20:15</option>
+													<option value="">20:30</option>
+													<option value="">21:45</option>
+													<option value="">21:00</option>
+													<option value="">21:15</option>
+													<option value="">21:30</option>
+													<option value="">21:45</option>
+													<option value="">22:00</option>
+													<option value="">22:15</option>
+													<option value="">22:30</option>
+													<option value="">22:45</option>
+													<option value="">23:00</option>
+													<option value="">23:15</option>
+													<option value="">23:30</option>
+													<option value="">23:45</option>
+												</select>
+											</div>
+											<div>
+												<label for="hasta">Horario Hasta:</label>
+												<select name="" id="hasta">
+													<option value="">0:00</option>
+													<option value="">0:15</option>
+													<option value="">0:30</option>
+													<option value="">0:45</option>
+													<option value="">1:00</option>
+													<option value="">1:15</option>
+													<option value="">1:30</option>
+													<option value="">1:45</option>
+													<option value="">2:00</option>
+													<option value="">3:00</option>
+													<option value="">3:15</option>
+													<option value="">3:30</option>
+													<option value="">3:45</option>
+													<option value="">4:00</option>
+													<option value="">4:00</option>
+													<option value="">4:15</option>
+													<option value="">4:30</option>
+													<option value="">4:45</option>
+													<option value="">5:00</option>
+													<option value="">5:00</option>
+													<option value="">5:15</option>
+													<option value="">5:30</option>
+													<option value="">5:45</option>
+													<option value="">6:00</option>
+													<option value="">6:00</option>
+													<option value="">6:15</option>
+													<option value="">6:30</option>
+													<option value="">6:45</option>
+													<option value="">7:00</option>
+													<option value="">7:00</option>
+													<option value="">7:15</option>
+													<option value="">7:30</option>
+													<option value="">7:45</option>
+													<option value="">8:00</option>
+													<option value="">8:00</option>
+													<option value="">8:15</option>
+													<option value="">8:30</option>
+													<option value="">8:45</option>
+													<option value="">9:00</option>
+													<option value="">9:00</option>
+													<option value="">9:15</option>
+													<option value="">9:30</option>
+													<option value="">9:45</option>
+													<option value="">10:00</option>
+													<option value="">10:00</option>
+													<option value="">10:15</option>
+													<option value="">10:30</option>
+													<option value="">10:45</option>
+													<option value="">11:00</option>
+													<option value="">11:00</option>
+													<option value="">11:15</option>
+													<option value="">11:30</option>
+													<option value="">11:45</option>
+													<option value="">12:00</option>
+													<option value="">12:00</option>
+													<option value="">12:15</option>
+													<option value="">12:30</option>
+													<option value="">12:45</option>
+													<option value="">13:00</option>
+													<option value="">13:15</option>
+													<option value="">13:30</option>
+													<option value="">13:45</option>
+													<option value="">14:00</option>
+													<option value="">14:15</option>
+													<option value="">14:30</option>
+													<option value="">14:45</option>
+													<option value="">15:00</option>
+													<option value="">15:15</option>
+													<option value="">15:30</option>
+													<option value="">15:45</option>
+													<option value="">16:00</option>
+													<option value="">16:15</option>
+													<option value="">16:30</option>
+													<option value="">16:45</option>
+													<option value="">17:00</option>
+													<option value="">17:15</option>
+													<option value="">17:30</option>
+													<option value="">17:45</option>
+													<option value="">18:00</option>
+													<option value="">18:15</option>
+													<option value="">18:30</option>
+													<option value="">18:45</option>
+													<option value="">19:00</option>
+													<option value="">19:15</option>
+													<option value="">19:30</option>
+													<option value="">19:45</option>
+													<option value="">20:00</option>
+													<option value="">20:15</option>
+													<option value="">20:30</option>
+													<option value="">21:45</option>
+													<option value="">21:00</option>
+													<option value="">21:15</option>
+													<option value="">21:30</option>
+													<option value="">21:45</option>
+													<option value="">22:00</option>
+													<option value="">22:15</option>
+													<option value="">22:30</option>
+													<option value="">22:45</option>
+													<option value="">23:00</option>
+													<option value="">23:15</option>
+													<option value="">23:30</option>
+													<option value="">23:45</option>
+												</select>
+											</div>
+										</div>
+									</div>
+									<a href="" class='add'>Añadir</a>
+								</div>
+							</div>
+							<div class="cfg_general">
+								<p class='title'>3. Configuración General</p>
+								<div class="mensaje">
+									<label for="mensaje">3.1 Elige el mensaje de bienvenida</label>
+									<textarea id='mensaje' placeholder="Hola, ¿cómo podemos ayudarte? Envíanos tu mensaje"></textarea>
+								</div>
+								<div class="form_down">
+									<div class="acciones">
+										<p>3.2 Mide las acciones de tu Widget</p>
+										<div class="checkboxs">
+											<div class="google">
+												<input type="checkbox" id='google_wsp' name='acciones' checked>
+												<label for='google_wsp'>Google Analytics</label>
+											</div>
+											<div class="facebook">
+												<input type="checkbox" id='facebook_wsp' name='acciones' checked>
+												<label for='facebook_wsp'>Pixel de Facebook</label>
+											</div>
+										</div>
+									</div>
+									<div class="donde">
+										<p>3.3 ¿Donde se mostrará el Widget?</p>
+										<div class="where">
+											<div>
+												<input type="radio" name='donde' id='desktop_wsp'>
+												<label for="desktop_wsp">Desktop</label>
+											</div>
+											<div>
+												<input type="radio" name='donde' id='mobile_wsp'>
+												<label for="mobile_wsp">Mobile</label>
+											</div>
+											<div>
+												<input type="radio" name='donde' id='ambas_wsp' checked>
+												<label for="ambas_wsp">Ambas</label>
+											</div>
+										</div>
+									</div>
+									<input type="submit" name="cfg" value='Guardar'>
+								</div>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="phone telefono">
+				<form action="">
+					<div class="border">
+						<div class="tit">
+							<h2>Teléfono</h2>
+						</div>
+						<div class="formulario">
+							<div class="numero">
+								<label for="numero">1. Agrega tus números de Teléfono</label>
+								<input type="text" id='numero'>
+								<!-- <a href="">Añadir</a> -->
+							</div>
+							<!-- <div class="como">
+								<label for="como">2. Cómo mostraremos tús números de Teléfono</label>
+								<div class="forma">
+									<div class='aleatoria'>
+										<input type="radio" id='aleatoria_tel' name='forma' class='aleatoria' checked>
+										<label for="aleatoria_tel">En forma Aleatoria</label>
+									</div>
+									<div class='trafico'>
+										<input type="radio" id='trafico_tel' name='forma' class='trafic'>
+										<label for="trafico_tel">Según fuentes de Tráfico</label>
+									</div>
+								</div>
+								<div class="phones">
+									<div class="phone">
+										<div class="tel">
+											<label>Teléfono</label>
+											<p>+541137710923</p>
+										</div>
+										<div>
+											<label for="source">utm_source</label>
+											<input type="text" id='source'>
+										</div>
+										<div>
+											<label for="medium">utm_medium</label>
+											<input type="text" id='medium'>
+										</div>
+										<div>
+											<label for="campaign">utm_campaign</label>
+											<input type="text" id='campaign'>
+										</div>
+										<div>
+											<label for="content">utm_content</label>
+											<input type="text" id='content'>
+										</div>
+									</div>
+									<div class="phone">
+										<div class="tel">
+											<label>Teléfono</label>
+											<p>+541137710923</p>
+										</div>
+										<div>
+											<label for="source">utm_source</label>
+											<input type="text" id='source'>
+										</div>
+										<div>
+											<label for="medium">utm_medium</label>
+											<input type="text" id='medium'>
+										</div>
+										<div>
+											<label for="campaign">utm_campaign</label>
+											<input type="text" id='campaign'>
+										</div>
+										<div>
+											<label for="content">utm_content</label>
+											<input type="text" id='content'>
+										</div>
+									</div>
+								</div>
+							</div> -->
+							<div class="dias">
+								<p>2. Define los días y horarios en que se activará  el Widget de Telefono</p>
+								<div class="days">
+									<div>
+										<input type="radio" id='todos_tel' name='days' class='todos' checked>
+										<label for="todos_tel">Todos los días y horarios</label>
+									</div>
+									<div>
+										<input type="radio" id='definir_tel' name='days' class='definir'>
+										<label for="definir_tel">Definir días y horarios</label>
+									</div>
+								</div>
+								<div class="fecha">
+									<div class="dates">
+										<div class="date">
+											<div>
+												<label for="dia">Día</label> 
+												<select name="" id="dia">
+													<option value="">Lunes</option>
+													<option value="">Martes</option>
+													<option value="">Miércoles</option>
+													<option value="">Jueves</option>
+													<option value="">Viernes</option>
+													<option value="">Sábados</option>
+													<option value="">Domingos</option>
+												</select>
+											</div>
+											<div>
+												<label for="desde">Horario Desde:</label>
+												<select name="" id="desde">
+													<option value="">0:00</option>
+													<option value="">0:15</option>
+													<option value="">0:30</option>
+													<option value="">0:45</option>
+													<option value="">1:00</option>
+													<option value="">1:15</option>
+													<option value="">1:30</option>
+													<option value="">1:45</option>
+													<option value="">2:00</option>
+													<option value="">3:00</option>
+													<option value="">3:15</option>
+													<option value="">3:30</option>
+													<option value="">3:45</option>
+													<option value="">4:00</option>
+													<option value="">4:00</option>
+													<option value="">4:15</option>
+													<option value="">4:30</option>
+													<option value="">4:45</option>
+													<option value="">5:00</option>
+													<option value="">5:00</option>
+													<option value="">5:15</option>
+													<option value="">5:30</option>
+													<option value="">5:45</option>
+													<option value="">6:00</option>
+													<option value="">6:00</option>
+													<option value="">6:15</option>
+													<option value="">6:30</option>
+													<option value="">6:45</option>
+													<option value="">7:00</option>
+													<option value="">7:00</option>
+													<option value="">7:15</option>
+													<option value="">7:30</option>
+													<option value="">7:45</option>
+													<option value="">8:00</option>
+													<option value="">8:00</option>
+													<option value="">8:15</option>
+													<option value="">8:30</option>
+													<option value="">8:45</option>
+													<option value="">9:00</option>
+													<option value="">9:00</option>
+													<option value="">9:15</option>
+													<option value="">9:30</option>
+													<option value="">9:45</option>
+													<option value="">10:00</option>
+													<option value="">10:00</option>
+													<option value="">10:15</option>
+													<option value="">10:30</option>
+													<option value="">10:45</option>
+													<option value="">11:00</option>
+													<option value="">11:00</option>
+													<option value="">11:15</option>
+													<option value="">11:30</option>
+													<option value="">11:45</option>
+													<option value="">12:00</option>
+													<option value="">12:00</option>
+													<option value="">12:15</option>
+													<option value="">12:30</option>
+													<option value="">12:45</option>
+													<option value="">13:00</option>
+													<option value="">13:15</option>
+													<option value="">13:30</option>
+													<option value="">13:45</option>
+													<option value="">14:00</option>
+													<option value="">14:15</option>
+													<option value="">14:30</option>
+													<option value="">14:45</option>
+													<option value="">15:00</option>
+													<option value="">15:15</option>
+													<option value="">15:30</option>
+													<option value="">15:45</option>
+													<option value="">16:00</option>
+													<option value="">16:15</option>
+													<option value="">16:30</option>
+													<option value="">16:45</option>
+													<option value="">17:00</option>
+													<option value="">17:15</option>
+													<option value="">17:30</option>
+													<option value="">17:45</option>
+													<option value="">18:00</option>
+													<option value="">18:15</option>
+													<option value="">18:30</option>
+													<option value="">18:45</option>
+													<option value="">19:00</option>
+													<option value="">19:15</option>
+													<option value="">19:30</option>
+													<option value="">19:45</option>
+													<option value="">20:00</option>
+													<option value="">20:15</option>
+													<option value="">20:30</option>
+													<option value="">21:45</option>
+													<option value="">21:00</option>
+													<option value="">21:15</option>
+													<option value="">21:30</option>
+													<option value="">21:45</option>
+													<option value="">22:00</option>
+													<option value="">22:15</option>
+													<option value="">22:30</option>
+													<option value="">22:45</option>
+													<option value="">23:00</option>
+													<option value="">23:15</option>
+													<option value="">23:30</option>
+													<option value="">23:45</option>
+												</select>
+											</div>
+											<div>
+												<label for="hasta">Horario Hasta:</label>
+												<select name="" id="hasta">
+													<option value="">0:00</option>
+													<option value="">0:15</option>
+													<option value="">0:30</option>
+													<option value="">0:45</option>
+													<option value="">1:00</option>
+													<option value="">1:15</option>
+													<option value="">1:30</option>
+													<option value="">1:45</option>
+													<option value="">2:00</option>
+													<option value="">3:00</option>
+													<option value="">3:15</option>
+													<option value="">3:30</option>
+													<option value="">3:45</option>
+													<option value="">4:00</option>
+													<option value="">4:00</option>
+													<option value="">4:15</option>
+													<option value="">4:30</option>
+													<option value="">4:45</option>
+													<option value="">5:00</option>
+													<option value="">5:00</option>
+													<option value="">5:15</option>
+													<option value="">5:30</option>
+													<option value="">5:45</option>
+													<option value="">6:00</option>
+													<option value="">6:00</option>
+													<option value="">6:15</option>
+													<option value="">6:30</option>
+													<option value="">6:45</option>
+													<option value="">7:00</option>
+													<option value="">7:00</option>
+													<option value="">7:15</option>
+													<option value="">7:30</option>
+													<option value="">7:45</option>
+													<option value="">8:00</option>
+													<option value="">8:00</option>
+													<option value="">8:15</option>
+													<option value="">8:30</option>
+													<option value="">8:45</option>
+													<option value="">9:00</option>
+													<option value="">9:00</option>
+													<option value="">9:15</option>
+													<option value="">9:30</option>
+													<option value="">9:45</option>
+													<option value="">10:00</option>
+													<option value="">10:00</option>
+													<option value="">10:15</option>
+													<option value="">10:30</option>
+													<option value="">10:45</option>
+													<option value="">11:00</option>
+													<option value="">11:00</option>
+													<option value="">11:15</option>
+													<option value="">11:30</option>
+													<option value="">11:45</option>
+													<option value="">12:00</option>
+													<option value="">12:00</option>
+													<option value="">12:15</option>
+													<option value="">12:30</option>
+													<option value="">12:45</option>
+													<option value="">13:00</option>
+													<option value="">13:15</option>
+													<option value="">13:30</option>
+													<option value="">13:45</option>
+													<option value="">14:00</option>
+													<option value="">14:15</option>
+													<option value="">14:30</option>
+													<option value="">14:45</option>
+													<option value="">15:00</option>
+													<option value="">15:15</option>
+													<option value="">15:30</option>
+													<option value="">15:45</option>
+													<option value="">16:00</option>
+													<option value="">16:15</option>
+													<option value="">16:30</option>
+													<option value="">16:45</option>
+													<option value="">17:00</option>
+													<option value="">17:15</option>
+													<option value="">17:30</option>
+													<option value="">17:45</option>
+													<option value="">18:00</option>
+													<option value="">18:15</option>
+													<option value="">18:30</option>
+													<option value="">18:45</option>
+													<option value="">19:00</option>
+													<option value="">19:15</option>
+													<option value="">19:30</option>
+													<option value="">19:45</option>
+													<option value="">20:00</option>
+													<option value="">20:15</option>
+													<option value="">20:30</option>
+													<option value="">21:45</option>
+													<option value="">21:00</option>
+													<option value="">21:15</option>
+													<option value="">21:30</option>
+													<option value="">21:45</option>
+													<option value="">22:00</option>
+													<option value="">22:15</option>
+													<option value="">22:30</option>
+													<option value="">22:45</option>
+													<option value="">23:00</option>
+													<option value="">23:15</option>
+													<option value="">23:30</option>
+													<option value="">23:45</option>
+												</select>
+											</div>
+										</div>
+									</div>
+									<a href="" class='add'>Añadir</a>
+								</div>
+							</div>
+							<div class="cfg_general">
+								<p class='title'>3. Configuración General</p>
+								<!-- <div class="mensaje">
+									<label for="mensaje">4.1 Elige el mensaje de bienvenida</label>
+									<textarea id='mensaje' placeholder="Hola, ¿cómo podemos ayudarte? Envíanos tu mensaje"></textarea>
+									<p>Este mensaje aparecerá a los 5 segundos de el usuario ingrese a alguna de las páginas de tu sitio web.</p>
+								</div> -->
+								<div class="form_down">
+									<div class="acciones">
+										<p>3.1 Mide las acciones de tu Widget</p>
+										<div class="checkboxs">
+											<div class="google">
+												<input type="checkbox" id='google_tel' name='acciones' checked>
+												<label for='google_tel'>Google Analytics</label>
+											</div>
+											<div class="facebook">
+												<input type="checkbox" id='facebook_tel' name='acciones' checked>
+												<label for='facebook_tel'>Pixel de Facebook</label>
+											</div>
+										</div>
+									</div>
+									<div class="donde">
+										<p>3.2 ¿Donde se mostrará el Widget?</p>
+										<div class="where">
+											<div>
+												<input type="radio" name='donde' id='desktop_tel'>
+												<label for="desktop_tel">Desktop</label>
+											</div>
+											<div>
+												<input type="radio" name='donde' id='mobile_tel'>
+												<label for="mobile_tel">Mobile</label>
+											</div>
+											<div>
+												<input type="radio" name='donde' id='ambas_tel' checked>
+												<label for="ambas_tel">Ambas</label>
+											</div>
+										</div>
+									</div>
+									<input type="submit" name="cfg" value='Guardar'>
+								</div>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="mail">
+				<form>
+					<div class="border">
+						<div class="tit">
+							<h2>Email</h2>
+						</div>
+						<div class="formulario">
+							<div class="url">
+								<label>1. Agrega tu dirección de Email</label>
+								<input type="text" name="" id='url' placeholder="Ej. tunombre@tuempresa.com">
+							</div>
+							<div class="dias">
+								<p>2. Define los días y horarios en que se activará  el Widget de Email</p>
+								<div class="days">
+									<div>
+										<input type="radio" id='todos_mail' name='days' class='todos' checked>
+										<label for="todos_mail">Todos los días y horarios</label>
+									</div>
+									<div>
+										<input type="radio" id='definir_mail' name='days' class='definir'>
+										<label for="definir_mail">Definir días y horarios</label>
+									</div>
+								</div>
+								<div class="fecha">
+									<div class="dates">
+										<div class="date">
+											<div>
+												<label for="dia">Día</label> 
+												<select name="" id="dia">
+													<option value="">Lunes</option>
+													<option value="">Martes</option>
+													<option value="">Miércoles</option>
+													<option value="">Jueves</option>
+													<option value="">Viernes</option>
+													<option value="">Sábados</option>
+													<option value="">Domingos</option>
+												</select>
+											</div>
+											<div>
+												<label for="desde">Horario Desde:</label>
+												<select name="" id="desde">
+													<option value="">0:00</option>
+													<option value="">0:15</option>
+													<option value="">0:30</option>
+													<option value="">0:45</option>
+													<option value="">1:00</option>
+													<option value="">1:15</option>
+													<option value="">1:30</option>
+													<option value="">1:45</option>
+													<option value="">2:00</option>
+													<option value="">3:00</option>
+													<option value="">3:15</option>
+													<option value="">3:30</option>
+													<option value="">3:45</option>
+													<option value="">4:00</option>
+													<option value="">4:00</option>
+													<option value="">4:15</option>
+													<option value="">4:30</option>
+													<option value="">4:45</option>
+													<option value="">5:00</option>
+													<option value="">5:00</option>
+													<option value="">5:15</option>
+													<option value="">5:30</option>
+													<option value="">5:45</option>
+													<option value="">6:00</option>
+													<option value="">6:00</option>
+													<option value="">6:15</option>
+													<option value="">6:30</option>
+													<option value="">6:45</option>
+													<option value="">7:00</option>
+													<option value="">7:00</option>
+													<option value="">7:15</option>
+													<option value="">7:30</option>
+													<option value="">7:45</option>
+													<option value="">8:00</option>
+													<option value="">8:00</option>
+													<option value="">8:15</option>
+													<option value="">8:30</option>
+													<option value="">8:45</option>
+													<option value="">9:00</option>
+													<option value="">9:00</option>
+													<option value="">9:15</option>
+													<option value="">9:30</option>
+													<option value="">9:45</option>
+													<option value="">10:00</option>
+													<option value="">10:00</option>
+													<option value="">10:15</option>
+													<option value="">10:30</option>
+													<option value="">10:45</option>
+													<option value="">11:00</option>
+													<option value="">11:00</option>
+													<option value="">11:15</option>
+													<option value="">11:30</option>
+													<option value="">11:45</option>
+													<option value="">12:00</option>
+													<option value="">12:00</option>
+													<option value="">12:15</option>
+													<option value="">12:30</option>
+													<option value="">12:45</option>
+													<option value="">13:00</option>
+													<option value="">13:15</option>
+													<option value="">13:30</option>
+													<option value="">13:45</option>
+													<option value="">14:00</option>
+													<option value="">14:15</option>
+													<option value="">14:30</option>
+													<option value="">14:45</option>
+													<option value="">15:00</option>
+													<option value="">15:15</option>
+													<option value="">15:30</option>
+													<option value="">15:45</option>
+													<option value="">16:00</option>
+													<option value="">16:15</option>
+													<option value="">16:30</option>
+													<option value="">16:45</option>
+													<option value="">17:00</option>
+													<option value="">17:15</option>
+													<option value="">17:30</option>
+													<option value="">17:45</option>
+													<option value="">18:00</option>
+													<option value="">18:15</option>
+													<option value="">18:30</option>
+													<option value="">18:45</option>
+													<option value="">19:00</option>
+													<option value="">19:15</option>
+													<option value="">19:30</option>
+													<option value="">19:45</option>
+													<option value="">20:00</option>
+													<option value="">20:15</option>
+													<option value="">20:30</option>
+													<option value="">21:45</option>
+													<option value="">21:00</option>
+													<option value="">21:15</option>
+													<option value="">21:30</option>
+													<option value="">21:45</option>
+													<option value="">22:00</option>
+													<option value="">22:15</option>
+													<option value="">22:30</option>
+													<option value="">22:45</option>
+													<option value="">23:00</option>
+													<option value="">23:15</option>
+													<option value="">23:30</option>
+													<option value="">23:45</option>
+												</select>
+											</div>
+											<div>
+												<label for="hasta">Horario Hasta:</label>
+												<select name="" id="hasta">
+													<option value="">0:00</option>
+													<option value="">0:15</option>
+													<option value="">0:30</option>
+													<option value="">0:45</option>
+													<option value="">1:00</option>
+													<option value="">1:15</option>
+													<option value="">1:30</option>
+													<option value="">1:45</option>
+													<option value="">2:00</option>
+													<option value="">3:00</option>
+													<option value="">3:15</option>
+													<option value="">3:30</option>
+													<option value="">3:45</option>
+													<option value="">4:00</option>
+													<option value="">4:00</option>
+													<option value="">4:15</option>
+													<option value="">4:30</option>
+													<option value="">4:45</option>
+													<option value="">5:00</option>
+													<option value="">5:00</option>
+													<option value="">5:15</option>
+													<option value="">5:30</option>
+													<option value="">5:45</option>
+													<option value="">6:00</option>
+													<option value="">6:00</option>
+													<option value="">6:15</option>
+													<option value="">6:30</option>
+													<option value="">6:45</option>
+													<option value="">7:00</option>
+													<option value="">7:00</option>
+													<option value="">7:15</option>
+													<option value="">7:30</option>
+													<option value="">7:45</option>
+													<option value="">8:00</option>
+													<option value="">8:00</option>
+													<option value="">8:15</option>
+													<option value="">8:30</option>
+													<option value="">8:45</option>
+													<option value="">9:00</option>
+													<option value="">9:00</option>
+													<option value="">9:15</option>
+													<option value="">9:30</option>
+													<option value="">9:45</option>
+													<option value="">10:00</option>
+													<option value="">10:00</option>
+													<option value="">10:15</option>
+													<option value="">10:30</option>
+													<option value="">10:45</option>
+													<option value="">11:00</option>
+													<option value="">11:00</option>
+													<option value="">11:15</option>
+													<option value="">11:30</option>
+													<option value="">11:45</option>
+													<option value="">12:00</option>
+													<option value="">12:00</option>
+													<option value="">12:15</option>
+													<option value="">12:30</option>
+													<option value="">12:45</option>
+													<option value="">13:00</option>
+													<option value="">13:15</option>
+													<option value="">13:30</option>
+													<option value="">13:45</option>
+													<option value="">14:00</option>
+													<option value="">14:15</option>
+													<option value="">14:30</option>
+													<option value="">14:45</option>
+													<option value="">15:00</option>
+													<option value="">15:15</option>
+													<option value="">15:30</option>
+													<option value="">15:45</option>
+													<option value="">16:00</option>
+													<option value="">16:15</option>
+													<option value="">16:30</option>
+													<option value="">16:45</option>
+													<option value="">17:00</option>
+													<option value="">17:15</option>
+													<option value="">17:30</option>
+													<option value="">17:45</option>
+													<option value="">18:00</option>
+													<option value="">18:15</option>
+													<option value="">18:30</option>
+													<option value="">18:45</option>
+													<option value="">19:00</option>
+													<option value="">19:15</option>
+													<option value="">19:30</option>
+													<option value="">19:45</option>
+													<option value="">20:00</option>
+													<option value="">20:15</option>
+													<option value="">20:30</option>
+													<option value="">21:45</option>
+													<option value="">21:00</option>
+													<option value="">21:15</option>
+													<option value="">21:30</option>
+													<option value="">21:45</option>
+													<option value="">22:00</option>
+													<option value="">22:15</option>
+													<option value="">22:30</option>
+													<option value="">22:45</option>
+													<option value="">23:00</option>
+													<option value="">23:15</option>
+													<option value="">23:30</option>
+													<option value="">23:45</option>
+												</select>
+											</div>
+										</div>
+									</div>
+									<a href="" class='add'>Añadir</a>
+								</div>
+							</div>
+							<div class="cfg_general">
+								<p class='title'>3. Configuración General</p>
+								<!-- <div class="mensaje">
+									<label for="mensaje">4.1 Elige el mensaje de bienvenida</label>
+									<textarea id='mensaje' placeholder="Hola, ¿cómo podemos ayudarte? Envíanos tu mensaje"></textarea>
+									<p>Este mensaje aparecerá a los 5 segundos de el usuario ingrese a alguna de las páginas de tu sitio web.</p>
+								</div> -->
+								<div class="form_down">
+									<div class="acciones">
+										<p>3.1 Mide las acciones de tu Widget</p>
+										<div class="checkboxs">
+											<div class="google">
+												<input type="checkbox" id='google_mail' name='acciones' checked>
+												<label for='google_mail'>Google Analytics</label>
+											</div>
+											<div class="facebook">
+												<input type="checkbox" id='facebook_mail' name='acciones' checked>
+												<label for='facebook_mail'>Pixel de Facebook</label>
+											</div>
+										</div>
+									</div>
+									<div class="donde">
+										<p>3.2 ¿Donde se mostrará el Widget?</p>
+										<div class="where">
+											<div>
+												<input type="radio" name='donde' id='desktop_mail'>
+												<label for="desktop_mail">Desktop</label>
+											</div>
+											<div>
+												<input type="radio" name='donde' id='mobile_mail'>
+												<label for="mobile_mail">Mobile</label>
+											</div>
+											<div>
+												<input type="radio" name='donde' id='ambas_mail' checked>
+												<label for="ambas_mail">Ambas</label>
+											</div>
+										</div>
+									</div>
+									<input type="submit" name="cfg" value='Guardar'>
+								</div>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="facebook_form">
+				<form>
+					<div class="border">
+						<div class="tit">
+							<h2>Facebook Messenger</h2>
+						</div>
+						<div class="formulario">
+							<div class="url">
+								<label>1. Agrega tu dirección de Facebook</label>
+								<input type="text" name="" id='url' placeholder="Ej. www.facebook.com/tuempresa">
+							</div>
+							<div class="dias">
+								<p>2. Define los días y horarios en que se activará  el Widget de Facebook Messenger</p>
+								<div class="days">
+									<div>
+										<input type="radio" id='todos_fb' name='days' class='todos' checked>
+										<label for="todos_fb">Todos los días y horarios</label>
+									</div>
+									<div>
+										<input type="radio" id='definir_fb' name='days' class='definir'>
+										<label for="definir_fb">Definir días y horarios</label>
+									</div>
+								</div>
+								<div class="fecha">
+									<div class="dates">
+										<div class="date">
+											<div>
+												<label for="dia">Día</label> 
+												<select name="" id="dia">
+													<option value="">Lunes</option>
+													<option value="">Martes</option>
+													<option value="">Miércoles</option>
+													<option value="">Jueves</option>
+													<option value="">Viernes</option>
+													<option value="">Sábados</option>
+													<option value="">Domingos</option>
+												</select>
+											</div>
+											<div>
+												<label for="desde">Horario Desde:</label>
+												<select name="" id="desde">
+													<option value="">0:00</option>
+													<option value="">0:15</option>
+													<option value="">0:30</option>
+													<option value="">0:45</option>
+													<option value="">1:00</option>
+													<option value="">1:15</option>
+													<option value="">1:30</option>
+													<option value="">1:45</option>
+													<option value="">2:00</option>
+													<option value="">3:00</option>
+													<option value="">3:15</option>
+													<option value="">3:30</option>
+													<option value="">3:45</option>
+													<option value="">4:00</option>
+													<option value="">4:00</option>
+													<option value="">4:15</option>
+													<option value="">4:30</option>
+													<option value="">4:45</option>
+													<option value="">5:00</option>
+													<option value="">5:00</option>
+													<option value="">5:15</option>
+													<option value="">5:30</option>
+													<option value="">5:45</option>
+													<option value="">6:00</option>
+													<option value="">6:00</option>
+													<option value="">6:15</option>
+													<option value="">6:30</option>
+													<option value="">6:45</option>
+													<option value="">7:00</option>
+													<option value="">7:00</option>
+													<option value="">7:15</option>
+													<option value="">7:30</option>
+													<option value="">7:45</option>
+													<option value="">8:00</option>
+													<option value="">8:00</option>
+													<option value="">8:15</option>
+													<option value="">8:30</option>
+													<option value="">8:45</option>
+													<option value="">9:00</option>
+													<option value="">9:00</option>
+													<option value="">9:15</option>
+													<option value="">9:30</option>
+													<option value="">9:45</option>
+													<option value="">10:00</option>
+													<option value="">10:00</option>
+													<option value="">10:15</option>
+													<option value="">10:30</option>
+													<option value="">10:45</option>
+													<option value="">11:00</option>
+													<option value="">11:00</option>
+													<option value="">11:15</option>
+													<option value="">11:30</option>
+													<option value="">11:45</option>
+													<option value="">12:00</option>
+													<option value="">12:00</option>
+													<option value="">12:15</option>
+													<option value="">12:30</option>
+													<option value="">12:45</option>
+													<option value="">13:00</option>
+													<option value="">13:15</option>
+													<option value="">13:30</option>
+													<option value="">13:45</option>
+													<option value="">14:00</option>
+													<option value="">14:15</option>
+													<option value="">14:30</option>
+													<option value="">14:45</option>
+													<option value="">15:00</option>
+													<option value="">15:15</option>
+													<option value="">15:30</option>
+													<option value="">15:45</option>
+													<option value="">16:00</option>
+													<option value="">16:15</option>
+													<option value="">16:30</option>
+													<option value="">16:45</option>
+													<option value="">17:00</option>
+													<option value="">17:15</option>
+													<option value="">17:30</option>
+													<option value="">17:45</option>
+													<option value="">18:00</option>
+													<option value="">18:15</option>
+													<option value="">18:30</option>
+													<option value="">18:45</option>
+													<option value="">19:00</option>
+													<option value="">19:15</option>
+													<option value="">19:30</option>
+													<option value="">19:45</option>
+													<option value="">20:00</option>
+													<option value="">20:15</option>
+													<option value="">20:30</option>
+													<option value="">21:45</option>
+													<option value="">21:00</option>
+													<option value="">21:15</option>
+													<option value="">21:30</option>
+													<option value="">21:45</option>
+													<option value="">22:00</option>
+													<option value="">22:15</option>
+													<option value="">22:30</option>
+													<option value="">22:45</option>
+													<option value="">23:00</option>
+													<option value="">23:15</option>
+													<option value="">23:30</option>
+													<option value="">23:45</option>
+												</select>
+											</div>
+											<div>
+												<label for="hasta">Horario Hasta:</label>
+												<select name="" id="hasta">
+													<option value="">0:00</option>
+													<option value="">0:15</option>
+													<option value="">0:30</option>
+													<option value="">0:45</option>
+													<option value="">1:00</option>
+													<option value="">1:15</option>
+													<option value="">1:30</option>
+													<option value="">1:45</option>
+													<option value="">2:00</option>
+													<option value="">3:00</option>
+													<option value="">3:15</option>
+													<option value="">3:30</option>
+													<option value="">3:45</option>
+													<option value="">4:00</option>
+													<option value="">4:00</option>
+													<option value="">4:15</option>
+													<option value="">4:30</option>
+													<option value="">4:45</option>
+													<option value="">5:00</option>
+													<option value="">5:00</option>
+													<option value="">5:15</option>
+													<option value="">5:30</option>
+													<option value="">5:45</option>
+													<option value="">6:00</option>
+													<option value="">6:00</option>
+													<option value="">6:15</option>
+													<option value="">6:30</option>
+													<option value="">6:45</option>
+													<option value="">7:00</option>
+													<option value="">7:00</option>
+													<option value="">7:15</option>
+													<option value="">7:30</option>
+													<option value="">7:45</option>
+													<option value="">8:00</option>
+													<option value="">8:00</option>
+													<option value="">8:15</option>
+													<option value="">8:30</option>
+													<option value="">8:45</option>
+													<option value="">9:00</option>
+													<option value="">9:00</option>
+													<option value="">9:15</option>
+													<option value="">9:30</option>
+													<option value="">9:45</option>
+													<option value="">10:00</option>
+													<option value="">10:00</option>
+													<option value="">10:15</option>
+													<option value="">10:30</option>
+													<option value="">10:45</option>
+													<option value="">11:00</option>
+													<option value="">11:00</option>
+													<option value="">11:15</option>
+													<option value="">11:30</option>
+													<option value="">11:45</option>
+													<option value="">12:00</option>
+													<option value="">12:00</option>
+													<option value="">12:15</option>
+													<option value="">12:30</option>
+													<option value="">12:45</option>
+													<option value="">13:00</option>
+													<option value="">13:15</option>
+													<option value="">13:30</option>
+													<option value="">13:45</option>
+													<option value="">14:00</option>
+													<option value="">14:15</option>
+													<option value="">14:30</option>
+													<option value="">14:45</option>
+													<option value="">15:00</option>
+													<option value="">15:15</option>
+													<option value="">15:30</option>
+													<option value="">15:45</option>
+													<option value="">16:00</option>
+													<option value="">16:15</option>
+													<option value="">16:30</option>
+													<option value="">16:45</option>
+													<option value="">17:00</option>
+													<option value="">17:15</option>
+													<option value="">17:30</option>
+													<option value="">17:45</option>
+													<option value="">18:00</option>
+													<option value="">18:15</option>
+													<option value="">18:30</option>
+													<option value="">18:45</option>
+													<option value="">19:00</option>
+													<option value="">19:15</option>
+													<option value="">19:30</option>
+													<option value="">19:45</option>
+													<option value="">20:00</option>
+													<option value="">20:15</option>
+													<option value="">20:30</option>
+													<option value="">21:45</option>
+													<option value="">21:00</option>
+													<option value="">21:15</option>
+													<option value="">21:30</option>
+													<option value="">21:45</option>
+													<option value="">22:00</option>
+													<option value="">22:15</option>
+													<option value="">22:30</option>
+													<option value="">22:45</option>
+													<option value="">23:00</option>
+													<option value="">23:15</option>
+													<option value="">23:30</option>
+													<option value="">23:45</option>
+												</select>
+											</div>
+										</div>
+									</div>
+									<a href="" class='add'>Añadir</a>
+								</div>
+							</div>
+							<div class="cfg_general">
+								<p class='title'>3. Configuración General</p>
+								<!-- <div class="mensaje">
+									<label for="mensaje">4.1 Elige el mensaje de bienvenida</label>
+									<textarea id='mensaje' placeholder="Hola, ¿cómo podemos ayudarte? Envíanos tu mensaje"></textarea>
+									<p>Este mensaje aparecerá a los 5 segundos de el usuario ingrese a alguna de las páginas de tu sitio web.</p>
+								</div> -->
+								<div class="form_down">
+									<div class="acciones">
+										<p>3.1 Mide las acciones de tu Widget</p>
+										<div class="checkboxs">
+											<div class="google">
+												<input type="checkbox" id='google_fb' name='acciones' checked>
+												<label for='google_fb'>Google Analytics</label>
+											</div>
+											<div class="facebook">
+												<input type="checkbox" id='facebook_fb' name='acciones' checked>
+												<label for='facebook_fb'>Pixel de Facebook</label>
+											</div>
+										</div>
+									</div>
+									<div class="donde">
+										<p>3.2 ¿Donde se mostrará el Widget?</p>
+										<div class="where">
+											<div>
+												<input type="radio" name='donde' id='desktop_fb'>
+												<label for="desktop_fb">Desktop</label>
+											</div>
+											<div>
+												<input type="radio" name='donde' id='mobile_fb'>
+												<label for="mobile_fb">Mobile</label>
+											</div>
+											<div>
+												<input type="radio" name='donde' id='ambas_fb' checked>
+												<label for="ambas_fb">Ambas</label>
+											</div>
+										</div>
+									</div>
+									<input type="submit" name="cfg" value='Guardar'>
+								</div>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="gmaps">
+				<form>
+					<div class="border">
+						<div class="tit">
+							<h2>Google Maps</h2>
+						</div>
+						<div class="formulario">
+							<div class="url">
+								<label>1. Agrega tu URL de Google Maps</label>
+								<input type="text" name="" id='url' placeholder="URL">
+							</div>
+							<div class="dias">
+								<p>2. Define los días y horarios en que se activará  el Widget de Google Maps</p>
+								<div class="days">
+									<div>
+										<input type="radio" id='todos_gm' name='days' class='todos' checked>
+										<label for="todos_gm">Todos los días y horarios</label>
+									</div>
+									<div>
+										<input type="radio" id='definir_gm' name='days' class='definir'>
+										<label for="definir_gm">Definir días y horarios</label>
+									</div>
+								</div>
+								<div class="fecha">
+									<div class="dates">
+										<div class="date">
+											<div>
+												<label for="dia">Día</label> 
+												<select name="" id="dia">
+													<option value="">Lunes</option>
+													<option value="">Martes</option>
+													<option value="">Miércoles</option>
+													<option value="">Jueves</option>
+													<option value="">Viernes</option>
+													<option value="">Sábados</option>
+													<option value="">Domingos</option>
+												</select>
+											</div>
+											<div>
+												<label for="desde">Horario Desde:</label>
+												<select name="" id="desde">
+													<option value="">0:00</option>
+													<option value="">0:15</option>
+													<option value="">0:30</option>
+													<option value="">0:45</option>
+													<option value="">1:00</option>
+													<option value="">1:15</option>
+													<option value="">1:30</option>
+													<option value="">1:45</option>
+													<option value="">2:00</option>
+													<option value="">3:00</option>
+													<option value="">3:15</option>
+													<option value="">3:30</option>
+													<option value="">3:45</option>
+													<option value="">4:00</option>
+													<option value="">4:00</option>
+													<option value="">4:15</option>
+													<option value="">4:30</option>
+													<option value="">4:45</option>
+													<option value="">5:00</option>
+													<option value="">5:00</option>
+													<option value="">5:15</option>
+													<option value="">5:30</option>
+													<option value="">5:45</option>
+													<option value="">6:00</option>
+													<option value="">6:00</option>
+													<option value="">6:15</option>
+													<option value="">6:30</option>
+													<option value="">6:45</option>
+													<option value="">7:00</option>
+													<option value="">7:00</option>
+													<option value="">7:15</option>
+													<option value="">7:30</option>
+													<option value="">7:45</option>
+													<option value="">8:00</option>
+													<option value="">8:00</option>
+													<option value="">8:15</option>
+													<option value="">8:30</option>
+													<option value="">8:45</option>
+													<option value="">9:00</option>
+													<option value="">9:00</option>
+													<option value="">9:15</option>
+													<option value="">9:30</option>
+													<option value="">9:45</option>
+													<option value="">10:00</option>
+													<option value="">10:00</option>
+													<option value="">10:15</option>
+													<option value="">10:30</option>
+													<option value="">10:45</option>
+													<option value="">11:00</option>
+													<option value="">11:00</option>
+													<option value="">11:15</option>
+													<option value="">11:30</option>
+													<option value="">11:45</option>
+													<option value="">12:00</option>
+													<option value="">12:00</option>
+													<option value="">12:15</option>
+													<option value="">12:30</option>
+													<option value="">12:45</option>
+													<option value="">13:00</option>
+													<option value="">13:15</option>
+													<option value="">13:30</option>
+													<option value="">13:45</option>
+													<option value="">14:00</option>
+													<option value="">14:15</option>
+													<option value="">14:30</option>
+													<option value="">14:45</option>
+													<option value="">15:00</option>
+													<option value="">15:15</option>
+													<option value="">15:30</option>
+													<option value="">15:45</option>
+													<option value="">16:00</option>
+													<option value="">16:15</option>
+													<option value="">16:30</option>
+													<option value="">16:45</option>
+													<option value="">17:00</option>
+													<option value="">17:15</option>
+													<option value="">17:30</option>
+													<option value="">17:45</option>
+													<option value="">18:00</option>
+													<option value="">18:15</option>
+													<option value="">18:30</option>
+													<option value="">18:45</option>
+													<option value="">19:00</option>
+													<option value="">19:15</option>
+													<option value="">19:30</option>
+													<option value="">19:45</option>
+													<option value="">20:00</option>
+													<option value="">20:15</option>
+													<option value="">20:30</option>
+													<option value="">21:45</option>
+													<option value="">21:00</option>
+													<option value="">21:15</option>
+													<option value="">21:30</option>
+													<option value="">21:45</option>
+													<option value="">22:00</option>
+													<option value="">22:15</option>
+													<option value="">22:30</option>
+													<option value="">22:45</option>
+													<option value="">23:00</option>
+													<option value="">23:15</option>
+													<option value="">23:30</option>
+													<option value="">23:45</option>
+												</select>
+											</div>
+											<div>
+												<label for="hasta">Horario Hasta:</label>
+												<select name="" id="hasta">
+													<option value="">0:00</option>
+													<option value="">0:15</option>
+													<option value="">0:30</option>
+													<option value="">0:45</option>
+													<option value="">1:00</option>
+													<option value="">1:15</option>
+													<option value="">1:30</option>
+													<option value="">1:45</option>
+													<option value="">2:00</option>
+													<option value="">3:00</option>
+													<option value="">3:15</option>
+													<option value="">3:30</option>
+													<option value="">3:45</option>
+													<option value="">4:00</option>
+													<option value="">4:00</option>
+													<option value="">4:15</option>
+													<option value="">4:30</option>
+													<option value="">4:45</option>
+													<option value="">5:00</option>
+													<option value="">5:00</option>
+													<option value="">5:15</option>
+													<option value="">5:30</option>
+													<option value="">5:45</option>
+													<option value="">6:00</option>
+													<option value="">6:00</option>
+													<option value="">6:15</option>
+													<option value="">6:30</option>
+													<option value="">6:45</option>
+													<option value="">7:00</option>
+													<option value="">7:00</option>
+													<option value="">7:15</option>
+													<option value="">7:30</option>
+													<option value="">7:45</option>
+													<option value="">8:00</option>
+													<option value="">8:00</option>
+													<option value="">8:15</option>
+													<option value="">8:30</option>
+													<option value="">8:45</option>
+													<option value="">9:00</option>
+													<option value="">9:00</option>
+													<option value="">9:15</option>
+													<option value="">9:30</option>
+													<option value="">9:45</option>
+													<option value="">10:00</option>
+													<option value="">10:00</option>
+													<option value="">10:15</option>
+													<option value="">10:30</option>
+													<option value="">10:45</option>
+													<option value="">11:00</option>
+													<option value="">11:00</option>
+													<option value="">11:15</option>
+													<option value="">11:30</option>
+													<option value="">11:45</option>
+													<option value="">12:00</option>
+													<option value="">12:00</option>
+													<option value="">12:15</option>
+													<option value="">12:30</option>
+													<option value="">12:45</option>
+													<option value="">13:00</option>
+													<option value="">13:15</option>
+													<option value="">13:30</option>
+													<option value="">13:45</option>
+													<option value="">14:00</option>
+													<option value="">14:15</option>
+													<option value="">14:30</option>
+													<option value="">14:45</option>
+													<option value="">15:00</option>
+													<option value="">15:15</option>
+													<option value="">15:30</option>
+													<option value="">15:45</option>
+													<option value="">16:00</option>
+													<option value="">16:15</option>
+													<option value="">16:30</option>
+													<option value="">16:45</option>
+													<option value="">17:00</option>
+													<option value="">17:15</option>
+													<option value="">17:30</option>
+													<option value="">17:45</option>
+													<option value="">18:00</option>
+													<option value="">18:15</option>
+													<option value="">18:30</option>
+													<option value="">18:45</option>
+													<option value="">19:00</option>
+													<option value="">19:15</option>
+													<option value="">19:30</option>
+													<option value="">19:45</option>
+													<option value="">20:00</option>
+													<option value="">20:15</option>
+													<option value="">20:30</option>
+													<option value="">21:45</option>
+													<option value="">21:00</option>
+													<option value="">21:15</option>
+													<option value="">21:30</option>
+													<option value="">21:45</option>
+													<option value="">22:00</option>
+													<option value="">22:15</option>
+													<option value="">22:30</option>
+													<option value="">22:45</option>
+													<option value="">23:00</option>
+													<option value="">23:15</option>
+													<option value="">23:30</option>
+													<option value="">23:45</option>
+												</select>
+											</div>
+										</div>
+									</div>
+									<a href="" class='add'>Añadir</a>
+								</div>
+							</div>
+							<div class="cfg_general">
+								<p class='title'>3. Configuración General</p>
+								<!-- <div class="mensaje">
+									<label for="mensaje_gm">3.1 Elige el mensaje de bienvenida</label>
+									<textarea id='mensaje_gm' placeholder="Hola, ¿cómo podemos ayudarte? Envíanos tu mensaje"></textarea>
+									<p>Este mensaje aparecerá a los 5 segundos de el usuario ingrese a alguna de las páginas de tu sitio web.</p>
+								</div> -->
+								<div class="form_down">
+									<div class="acciones">
+										<p>3.1 Mide las acciones de tu Widget</p>
+										<div class="checkboxs">
+											<div class="google">
+												<input type="checkbox" id='google_gm' name='acciones' checked>
+												<label for='google_gm'>Google Analytics</label>
+											</div>
+											<div class="facebook">
+												<input type="checkbox" id='facebook_gm' name='acciones' checked>
+												<label for='facebook_gm'>Pixel de Facebook</label>
+											</div>
+										</div>
+									</div>
+									<div class="donde">
+										<p>3.2 ¿Donde se mostrará el Widget?</p>
+										<div class="where">
+											<div>
+												<input type="radio" name='donde' id='desktop_gm'>
+												<label for="desktop_gm">Desktop</label>
+											</div>
+											<div>
+												<input type="radio" name='donde' id='mobile_gm'>
+												<label for="mobile_gm">Mobile</label>
+											</div>
+											<div>
+												<input type="radio" name='donde' id='ambas_gm'  checked>
+												<label for="ambas_gm">Ambas</label>
+											</div>
+										</div>
+									</div>
+									<input type="submit" name="cfg" value='Guardar'>
+								</div>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+	<script type="text/javascript" src='js/jquery-3.1.1.min.js'></script>
+	<script type="text/javascript" src='js/content.js'></script>
+	<script type="text/javascript" src='js/app.js'></script>
+	<script type="text/javascript" src='js/efects.js'></script>
+</body>
+</html>
